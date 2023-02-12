@@ -4,13 +4,14 @@ from .models import *
 
 @admin.register(ProductCategory)
 class ProductCategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description')
-    list_editable = ('name', 'description')
+    list_display = ('name', 'description')
+
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description', 'price')
+    list_display = ('name', 'description')
+
 
 
 
